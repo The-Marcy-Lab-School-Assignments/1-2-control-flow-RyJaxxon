@@ -1,7 +1,10 @@
 const measureRain = (inches) => {
   switch (true) {
+    case inches === 0:
+      console.log('drought')
+      break
     case inches < 2:
-      console.log("dry");
+      console.log('dry');
       break;
     case inches < 4:
       console.log('average');
@@ -14,15 +17,64 @@ const measureRain = (inches) => {
       break;
   }
 };
-measureRain(4);
 
-const happyBirthdayPet = () => {
-};
+// const happyBirthdayPet = (breed, age) => {
+//   if (breed == 'snake') {
+//     console.log("Hiss hiss!")
+//   } else if (breed == 'cat') {
+//     if (age < 5) {
+//       console.log("Mew mew!")
+//     } else {
+//       console.log("Meow meow!")
+//     }
+//   } else if (breed == 'dog') {
+//     if (age < 5) {
+//       console.log("Arf arf!")
+//     } else if (age >= 5 && age < 10) {
+//       console.log("Woof woof!")
+//     } else {
+//       console.log("Boof!")
+//     }
+//   } else {
+//     console.log("Happy birthday!")
+//   };
+// };
 
-const funTypes = () => {
-};
+// const funTypes = (jsType) => {
+//   if (Number.isNaN(jsType)) {
+//     console.log("Well, now you're just showing off.");
+//   } else if (typeof jsType === 'number') {
+//     console.log("That's a good number.");
+//   } else if (typeof jsType === 'string') {
+//     console.log("That's just some text.");
+//   } else if (typeof jsType === 'boolean') {
+//     console.log("To bool, or not to bool?");
+//   } else if (jsType === undefined) {
+//     console.log("Nothing, but I didn't set that.");
+//   } else if (jsType === null) {
+//     console.log("Nothing, and I did set that.");
+//   } else if (Array.isArray(jsType)) {
+//     console.log("I order you to be indexed.")
+//   } else if (typeof jsType === 'object') {
+//     console.log("Anybody got the key?")
+//   }
+// };
 
-const rounder = () => {
+// console.log(typeof null);
+
+// funTypes(NaN); // Output: Well, now you're just showing off.
+// funTypes(42); // Output: That's a good number.
+// funTypes("Hello"); // Output: That's just some text.
+// funTypes(true); // Output: To bool, or not to bool?
+// funTypes(undefined); // Output: Nothing, but I didn't set that.
+// funTypes(null); // Output: Nothing, and I did set that.
+// funTypes([1, 2, 3]); // Output: I order you to be indexed.
+// funTypes({}); // Output: Anybody got the key?
+
+
+const rounder = (float, roundSetting) => {
+
+
 };
 
 const fizzBuzzish = () => {
