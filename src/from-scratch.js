@@ -76,7 +76,7 @@ const rounder = (float, roundSetting) => {
     return Math.ceil(float);
   } else if (realRoundSetting === "down") {
     return Math.floor(float);
-  } else {
+  } else if (realRoundSetting === "honest") {
     if (float - Math.floor(float) < .5) {
       return (Math.floor(float));
     } else {
