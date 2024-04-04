@@ -89,8 +89,22 @@ const rounder = (float, roundSetting) => {
 // console.log(rounder(4.67, "DOWN"));
 // console.log(rounder(3.45, "HONEST"));
 
-const fizzBuzzish = () => {
+const fizzBuzzish = (num) => {
+  if (num % 3 === 0 && num % 5 === 0) {
+    console.log("fizzBuzz!");
+  } else if (num % 5 === 0) {
+    console.log("buzz");
+  } else if (num % 3 === 0) {
+    console.log("fizz")
+  } else {
+    console.log(num)
+  };
 };
+
+fizzBuzzish(9)
+fizzBuzzish(20)
+fizzBuzzish(15)
+fizzBuzzish(7)
 
 module.exports = {
   measureRain,
