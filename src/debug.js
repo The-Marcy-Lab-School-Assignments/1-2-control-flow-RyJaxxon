@@ -3,7 +3,7 @@ const getRandomIntInRange = (min, max) => {
   return Math.floor(Math.random() * (max - min)) + min;
 };
 
-console.log(getRandomIntInRange(4, 10))
+// console.log(getRandomIntInRange(4, 10))
 
 const coolnessGauge = (numOfFridges) => {
   return numOfFridges < 4 ? 'You need more fridges.' : 'You are downright chilly!';
@@ -23,22 +23,28 @@ const funkoPopAddictionLevel = (numOfFunkoPops) => {
   };
 };
 
-funkoPopAddictionLevel(20);
+// funkoPopAddictionLevel(20);
 
 const getWeatherReport = (temperature) => {
+  let weatherReport = ""
   if (temperature > 90) {
-    const weatherReport = "It's hot and gross out.";
+    weatherReport = "It's hot and gross out.";
     console.log(weatherReport);
   } else if (temperature > 70) {
-    const weatherReport = "At least it's a dry heat.";
+    weatherReport = "At least it's a dry heat.";
+    console.log(weatherReport);
+  } else if (temperature <= 70 && temperature >= 32) {
+    weatherReport = "It's not too bad!"
     console.log(weatherReport);
   } else if (temperature < 32) {
-    const weatherReport = "Wow, it's cold out.";
+    weatherReport = "Wow, it's cold out.";
     console.log(weatherReport);
   }
   console.log("And that's your report!");
   return weatherReport;
 };
+
+getWeatherReport(32);
 
 const returnPositiveNegativeZero = (num) => {
   return num < 0
