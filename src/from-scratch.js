@@ -18,27 +18,27 @@ const measureRain = (inches) => {
   }
 };
 
-// const happyBirthdayPet = (breed, age) => {
-//   if (breed == 'snake') {
-//     console.log("Hiss hiss!")
-//   } else if (breed == 'cat') {
-//     if (age < 5) {
-//       console.log("Mew mew!")
-//     } else {
-//       console.log("Meow meow!")
-//     }
-//   } else if (breed == 'dog') {
-//     if (age < 5) {
-//       console.log("Arf arf!")
-//     } else if (age >= 5 && age < 10) {
-//       console.log("Woof woof!")
-//     } else {
-//       console.log("Boof!")
-//     }
-//   } else {
-//     console.log("Happy birthday!")
-//   };
-// };
+const happyBirthdayPet = (breed, age) => {
+  if (breed == 'snake') {
+    console.log("Hiss hiss!")
+  } else if (breed == 'cat') {
+    if (age < 5) {
+      console.log("Mew mew!")
+    } else {
+      console.log("Meow meow!")
+    }
+  } else if (breed == 'dog') {
+    if (age < 5) {
+      console.log("Arf arf!")
+    } else if (age >= 5 && age < 10) {
+      console.log("Woof woof!")
+    } else {
+      console.log("Boof!")
+    }
+  } else {
+    console.log("Happy birthday!")
+  };
+};
 
 // const funTypes = (jsType) => {
 //   if (Number.isNaN(jsType)) {
