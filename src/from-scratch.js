@@ -70,10 +70,24 @@ const funTypes = (jsType) => {
 // funTypes({}); // Output: Anybody got the key?
 
 
-const rounder = () => {
+const rounder = (float, roundSetting) => {
+  let realRoundSetting = roundSetting.toLowerCase()
+  if (realRoundSetting === "up") {
+    return Math.ceil(float);
+  } else if (realRoundSetting === "down") {
+    return Math.floor(float);
+  } else {
+    if (float - Math.floor(float) < .5) {
+      return (Math.floor(float));
+    } else {
+      return (Math.ceil(float));
+    }
+  };
+}
 
-
-};
+// console.log(rounder(3.24, "UP"));
+// console.log(rounder(4.67, "DOWN"));
+// console.log(rounder(3.45, "HONEST"));
 
 const fizzBuzzish = () => {
 };
