@@ -44,15 +44,20 @@ const getWeatherReport = (temperature) => {
   return weatherReport;
 };
 
-getWeatherReport(32);
+// getWeatherReport(32);
 
 const returnPositiveNegativeZero = (num) => {
-  return num < 0
-    ? "Positive"
-    : num === 0
-      ? "Zero"
-      : "Negative";
-};
+  if (num === 0) {
+    return 'Zero'
+  } else if (num < 0) {
+    return 'Negative'
+  } else {
+    return 'Positive'
+  }
+}
+returnPositiveNegativeZero(2)
+returnPositiveNegativeZero(0)
+returnPositiveNegativeZero(-2)
 
 module.exports = {
   getRandomIntInRange,
