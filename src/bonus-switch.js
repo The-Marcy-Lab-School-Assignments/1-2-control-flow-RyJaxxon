@@ -28,7 +28,7 @@ const rounderSwitch = (float, roundSetting) => {
       break;
     case roundSetting === 'honest':
       return (float - Math.floor(float) < 0.5 ? Math.floor(float) : Math.ceil(float))
-
+      break;
   }
 }
 
