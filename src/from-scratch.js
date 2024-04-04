@@ -40,27 +40,25 @@ const happyBirthdayPet = (breed, age) => {
   };
 };
 
-// const funTypes = (jsType) => {
-//   if (Number.isNaN(jsType)) {
-//     console.log("Well, now you're just showing off.");
-//   } else if (typeof jsType === 'number') {
-//     console.log("That's a good number.");
-//   } else if (typeof jsType === 'string') {
-//     console.log("That's just some text.");
-//   } else if (typeof jsType === 'boolean') {
-//     console.log("To bool, or not to bool?");
-//   } else if (jsType === undefined) {
-//     console.log("Nothing, but I didn't set that.");
-//   } else if (jsType === null) {
-//     console.log("Nothing, and I did set that.");
-//   } else if (Array.isArray(jsType)) {
-//     console.log("I order you to be indexed.")
-//   } else if (typeof jsType === 'object') {
-//     console.log("Anybody got the key?")
-//   }
-// };
-
-// console.log(typeof null);
+const funTypes = (jsType) => {
+  if (Number.isNaN(jsType)) {
+    console.log("Well, now you're just showing off.");
+  } else if (typeof jsType === 'number') {
+    console.log("That's a good number.");
+  } else if (typeof jsType === 'string') {
+    console.log("That's just some text.");
+  } else if (typeof jsType === 'boolean') {
+    console.log("To bool, or not to bool?");
+  } else if (jsType === undefined) {
+    console.log("Nothing, but I didn't set that.");
+  } else if (jsType === null) {
+    console.log("Nothing, and I did set that.");
+  } else if (Array.isArray(jsType)) {
+    console.log("I order you to be indexed.")
+  } else if (typeof jsType === 'object') {
+    console.log("Anybody got the key?")
+  }
+};
 
 // funTypes(NaN); // Output: Well, now you're just showing off.
 // funTypes(42); // Output: That's a good number.
@@ -72,7 +70,7 @@ const happyBirthdayPet = (breed, age) => {
 // funTypes({}); // Output: Anybody got the key?
 
 
-const rounder = (float, roundSetting) => {
+const rounder = () => {
 
 
 };
