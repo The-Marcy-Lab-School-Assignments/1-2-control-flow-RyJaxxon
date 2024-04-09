@@ -1,3 +1,4 @@
+/** FEEDBACK: AYE! You did it! Great job! */
 const measureRainSwitch = (inches) => {
   switch (true) {
     case inches === 0:
@@ -27,6 +28,7 @@ const rounderSwitch = (float, roundSetting) => {
       return Math.floor(float);
       break;
     case roundSetting === 'honest':
+      /** FEEDBACK: Math.round will do this for you! */
       return (float - Math.floor(float) < 0.5 ? Math.floor(float) : Math.ceil(float))
       break;
   }
